@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario web</title>
+</head>
+<body>
+    <header><h1>Formulario de registro</h1></header>
+    <h2>Formulario de registro</h2>
+    <h3>Formulario de registro</h3>
+    <h4>Formulario de registro</h4>
+    <h5>Formulario de registro</h5>
+    <h6>Formulario de registro</h6>
+    
+    <div id="principal">
+        <form id="form1" name="registro" action="#">
+        <fieldset name="datos">
+            <legend>Datos personales</legend>
+            <label>Nombre</label>
+            <input type="text" name="nombre" required="true" maxlength="3" placeholder="Por ejemplo: Juan">
+            <p>
+            <label>Sexo</label>
+            <input type="radio" name="sexo" value="M"> Masculino
+            <input type="radio" name="sexo" value="F"> Femenino
+            </p>
+        </fieldset>
+
+            <p><label>Mis hobbies son:</label><br>
+                <input type="checkbox" name="op1" value="leer">Leer <br>
+                <input type="checkbox" name="op2" value="bailar">Bailar<br>
+                <input type="checkbox" name="op3" value="cantar">Cantar<br>
+                <input type="checkbox" name="op4" value="Futbol">Futbol<br>
+                <input type="checkbox" name="op5" value="basquetbol">Basquetbol<br>
+                <input type="checkbox" name="op6" value="videojuego">Jugar videojuegos<br>
+            </p>
+            
+            <p>
+                <label>Vivo en la colonia</label>
+                <select name="colonia" id="colonia">
+                    <option value="Aviacion">Aviacion</option>
+                    <option value="Benito Juarez">Benito Juarez</option>
+                    <option value="Caltitlan">Caltitlan</option>
+                    <option value="Santa Anita">Santa Anita</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Emiliano Zapata">Emiliano Zapata</option>
+                    <option value="Lazaro Cardenas">Lazaro Cardenas</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Reseña de mi vida</label><br>
+                <textarea name="res" id="res" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpiar"><br>
+              <input type="button" value="Enviar"><br>
+              <input type="date" ><br>
+              <input type="hidden" value="Hola"><br>
+            </p>
+
+
+        </form>
+    </div>
+
+
+</body>
+</html>
